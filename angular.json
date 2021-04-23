@@ -120,6 +120,10 @@
               "devServerTarget": "sd2:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

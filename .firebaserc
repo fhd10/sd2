@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "adruino-iot": {
+      "hosting": {
+        "sd2": [
+          "adruino-iot"
+        ]
+      }
+    }
+  }
+}
