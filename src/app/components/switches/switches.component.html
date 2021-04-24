@@ -1,1 +1,8 @@
-<p>switches works!</p>
+<mat-card>
+    <mat-card-content>
+        <h1>switches</h1>
+        <mat-slide-toggle [checked]="buildingswitch" (click)='togglebuildingswitch()'>building</mat-slide-toggle>
+        <mat-slide-toggle [checked]="parkingswitch"  (click)='toggleparkingswitch()'>parking</mat-slide-toggle>
+        <mat-slide-toggle [checked]="highwayswitch"  (click)='togglehighwayswitch()'>highway</mat-slide-toggle>
+    </mat-card-content>
+</mat-card>

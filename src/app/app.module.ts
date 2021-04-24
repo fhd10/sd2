@@ -7,7 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { DashboaredModule } from './dashboared/dashboared.module';
 import { SettingsModule } from './settings/settings.module';
-
+import { AngularFireModule } from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore'
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule} from "@angular/fire/auth"
 @NgModule({
   declarations: [
     AppComponent
@@ -16,9 +19,12 @@ import { SettingsModule } from './settings/settings.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     AuthModule,
     DashboaredModule,
-    SettingsModule
+    SettingsModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { DashboaredRoutingModule } from './dashboared-routing.module';
 import { DashboaredComponent } from './dashboared.component';
 import { ShellModule } from '../shell/shell.module';
+import { TempratureModule } from '../components/temprature/temprature.module';
+import { ParkingModule } from '../components/parking/parking.module';
+
 
 
 @NgModule({
@@ -13,7 +16,9 @@ import { ShellModule } from '../shell/shell.module';
   imports: [
     CommonModule,
     DashboaredRoutingModule,
-    ShellModule
+    ShellModule,
+    TempratureModule,
+    ParkingModule
   ]
 })
 export class DashboaredModule { }

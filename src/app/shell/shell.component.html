@@ -6,7 +6,8 @@
              Dashboared</a>
           <a mat-list-item routerLink="/settings"><mat-icon>settings</mat-icon>
                 settings</a>
-          <a mat-list-item routerLink="/logout"><mat-icon>logout</mat-icon>
+          <a mat-list-item (click)="onLogout()">
+              <mat-icon>logout</mat-icon>
                     Logout</a>
 
              

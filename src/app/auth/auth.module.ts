@@ -9,6 +9,9 @@ import { MatFormFieldModule } from "@angular/material/form-field"
 import {MatInputModule} from "@angular/material/input"
 import { MatIconModule} from "@angular/material/icon"
 import {MatButtonModule } from "@angular/material/button"
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule} from '@angular/material/snack-bar'
+
 @NgModule({
   declarations: [
     LoginComponent
@@ -16,11 +19,13 @@ import {MatButtonModule } from "@angular/material/button"
   imports: [
     CommonModule,
     AuthRoutingModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ]
 })
 export class AuthModule { }

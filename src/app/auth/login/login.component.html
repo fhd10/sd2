@@ -4,20 +4,20 @@
            <mat-card-title>Acount login</mat-card-title>
            <mat-card-subtitle>Enter your credentials to login</mat-card-subtitle>
            <mat-card-content>
-               <form class= "login-form">
+               <form class= "login-form" [formGroup]="loginform" (ngSubmit)="onLogin()">
                    <mat-form-field appearance=outline>
                     <mat-label>Email Address</mat-label>
-                    <input matInput type="email">
+                    <input matInput type="email" formControlName="email">
                     <mat-icon matSuffix>email</mat-icon>
                    </mat-form-field>
 
                    <mat-form-field appearance=outline>
                     <mat-label>Password</mat-label>
-                    <input matInput type="password">
+                    <input matInput type="password" formControlName= "password">
                     <mat-icon matSuffix>lock</mat-icon>
                    </mat-form-field>
 
-                   <button mat-raised-button color="primary">submit</button>
+                   <button mat-raised-button color="primary" [disabled]="loginform.invalid">submit</button>
                </form>
            </mat-card-content>
        </mat-card-header>

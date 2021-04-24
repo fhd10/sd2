@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyBy9qfGGZCSyPyf2ybR6mTyQAVl2Y1Dbp0",
+    authDomain: "adruino-iot.firebaseapp.com",
+    databaseURL: "https://adruino-iot.firebaseio.com",
+    projectId: "adruino-iot",
+    storageBucket: "adruino-iot.appspot.com",
+    messagingSenderId: "752563644283",
+    appId: "1:752563644283:web:a78045a85998f2fda3ffde",
+    measurementId: "G-1EMTLYCTXC"
+  }
 };
 
 /*

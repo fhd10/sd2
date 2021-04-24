@@ -10,6 +10,9 @@ import { ParkingComponent } from './parking.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ParkingComponent
   ]
 })
 export class ParkingModule { }
